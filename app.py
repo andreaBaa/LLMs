@@ -16,10 +16,10 @@ from PIL import Image
 #from pathlib import Path
 
 st.title('Chatea con tu PDF 💬')
-ke = st.text_input('Ingresa tu clave para comenzar')
-
 image = Image.open('chatconpdf.png')
-st.image(image, width=200)
+st.image(image, width=400)
+
+ke = st.text_input('Ingresa tu clave para comenzar')
 
 #os.environ['OPENAI_API_KEY'] = st.secrets['OPENAI_API_KEY']
 os.environ['OPENAI_API_KEY'] = ke
